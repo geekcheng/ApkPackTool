@@ -14,7 +14,7 @@ char* TimeToStrDateTime(char *strz)
     return strz;
 }
 
-#define LOGFILENAME  "./tool/log.txt"
+#define LOGFILENAME  "./log.txt"
 void mYdump(char* pszFormat, ...)
 {
 	static char nPrintableStr[3*1024] = {0};
