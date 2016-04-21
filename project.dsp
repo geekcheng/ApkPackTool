@@ -94,7 +94,7 @@ SOURCE=.\libos.h
 # End Source File
 # Begin Source File
 
-SOURCE=.\mai.c
+SOURCE=.\main.c
 # End Source File
 # End Group
 # Begin Group "Header Files"
