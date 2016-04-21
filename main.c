@@ -365,6 +365,7 @@ int main(int argc, char **argv)
 	for(int i=0;i<g_iCount;i++){
 		char *CHANNEL = g_pszCHANNEL[i];
 		char *CID = g_pszCID[i];
+		char *pszOutputFileName = NULL;
 
 		LOGE("正在打包(%d)--->[CHANNEL=%s,CID=%s]\r\n", i,CHANNEL, CID);
 		LOGE("0...%d%%", 20);		
@@ -405,7 +406,7 @@ int main(int argc, char **argv)
 		LOGE("...%d%%", 90);
 		
 		// 6. 清理原来的输出的名字,如果有的话
-		char *pszOutputFileName = getOutputApkFileName(pszApkFileName,CHANNEL,CID);
+		pszOutputFileName = getOutputApkFileName(pszApkFileName,CHANNEL,CID);
 		sprintf(cmdLine,"if exist %s del /q/f %s >nul", pszOutputFileName,pszOutputFileName);
 		system(cmdLine);
 		
