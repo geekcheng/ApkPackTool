@@ -1,5 +1,5 @@
 # ApkPackTool
-apk channel package tool
+A cmd-line TOOL for apk channel pack
 
 Configuration environment.  
 Install JDK Android-SDK and ApkTool, and add all of them to Path Environment
